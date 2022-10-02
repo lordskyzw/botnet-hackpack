@@ -16,7 +16,7 @@ int init_channel (char *ip, int port, char *name) {
     exit(1);
   }
   
-  int connection_status = connect(channel, server, ) //use the defined channel to connect the slave to the master server
+  int connection_status = connect(channel, server, 10240) //use the defined channel to connect the slave to the master server
   
   if (connection_status < 0) {
     perror ("connect:");
